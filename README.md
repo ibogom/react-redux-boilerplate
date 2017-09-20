@@ -29,7 +29,8 @@ After completing the [installation](#installation) step, you're ready to start t
 $ npm start  # Start the development server
 ```
 
-##Project structure
+## Project structure
+
 The project structure presented in this boilerplate is **fractal**, where functionality is grouped primarily by feature rather than file type. This structure is only meant to serve as a guide, it is by no means prescriptive. That said, it aims to represent generally accepted guidelines and patterns for building scalable applications
 
 ```
@@ -56,6 +57,6 @@ The project structure presented in this boilerplate is **fractal**, where functi
     |--index.html                        #Main HTML page container for app
 ```
 
-##Styles
+## Styles
 
-##Tests
+## Tests
