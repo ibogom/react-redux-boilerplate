@@ -9,7 +9,7 @@ This project was started as development tools that should help web developers cr
 
 ##Installation
 
-After confirming that your environment meets the above [requirements](#requirements), you can create a new project based on `react-redux-boilerplate` by doing the following:
+After confirming that your environment meets the above requirements, you can create a new project based on `react-redux-boilerplate` by doing the following:
 
 ```bash
 $ git clone https://github.com/ibogom/react-redux-boilerplate <my-project-name>
@@ -24,7 +24,7 @@ $ npm install
 
 ## Running the Project
 
-After completing the [installation](#installation) step, you're ready to start the project!
+After completing the installation step, you're ready to start the project!
 
 ```bash
 $ npm start  # Start the development server
