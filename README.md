@@ -6,7 +6,7 @@ You are welcome to use this project if it is a better fit for your needs, but if
 
 This project was started as development tools that should help web developers create new web sites/application. 
 
-##Installation
+## Installation
 
 After confirming that your environment meets the above requirements, you can create a new project based on `react-redux-boilerplate` by doing the following:
 
