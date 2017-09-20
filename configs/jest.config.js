@@ -1,7 +1,7 @@
 
 module.exports = {
     verbose: true,
-    rootDir: './',
+    rootDir: '../',
     moduleFileExtensions: [
         "js",
         "jsx",

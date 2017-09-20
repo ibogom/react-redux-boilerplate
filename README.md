@@ -39,6 +39,7 @@ The project structure presented in this boilerplate is **fractal**, where functi
 |   |-- base.config.js                   # Base webpack config with default properties
 |   |-- dev.config.js                    # Developement webpack config   
 |   |-- prod.config.js                   # Production webpack config
+|   |-- jest.config.js                   # Configurations of the Unit tests (Jest)
 |-- /src                                 # Application source code
 |   |-- /assets                          # In this folder is stored images/fonts and css themes
 |   |   |-- /themes                      # Css themes folder
@@ -55,7 +56,6 @@ The project structure presented in this boilerplate is **fractal**, where functi
 |   |   |--/test                         # Tests folder
 |   |   |--main.js                       # Application bootstrap and rendering
 |   |--index.html                        # Main HTML page container for app
-|-- jest.config.js                       # Configurations of the Unit tests (Jest)
 ```
 
 ## Styles
