@@ -58,3 +58,6 @@ typings/
 .env
 
 .idea
+
+main.*.css
+main.min.js
