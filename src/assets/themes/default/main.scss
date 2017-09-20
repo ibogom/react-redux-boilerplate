@@ -1,0 +1,84 @@
+@import "color_cheme";
+@import "fonts";
+
+/* DEFAULT INDEXES */
+$high-index: 10000;
+$middle-index: 1000;
+$low-index: 100;
+
+/** HEADER **/
+
+h1, h2, h3{
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-pr-clr;
+}
+
+/** INPUTS **/
+select,
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='tel'],
+input[type='password'],
+input[type='number'],
+textarea {
+  display: block;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  background-color: $third-clr;
+  border: 1px solid $btn-def;
+  padding: 5px 15px;
+  outline: 0;
+  color: $font-pr-clr;
+  font-size: $font-14px;
+  font-weight: normal;
+  box-sizing: border-box;
+  &:focus{
+    border:1px solid $btn-scs;
+  }
+  &:disabled{
+    background-color: $pr-clr;
+  }
+}
+
+
+input[type='date']:before{
+  content: attr(placeholder);
+  text-align: left;
+  position: relative;
+  margin-right: 10px;
+  color: $font-pr-clr;
+  font-size: $font-14px;
+  float: left;
+}
+
+::-webkit-input-placeholder {
+  color: $font-scnd-clr;
+}
+
+::-moz-placeholder {
+  color: $font-scnd-clr;
+}
+
+:-moz-placeholder {
+  color: $font-scnd-clr;
+}
+
+:-ms-input-placeholder {
+  color: $font-scnd-clr;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height:100vh;
+  font-family: $sans-font-family;
+  background-color: $pr-clr;
+}
