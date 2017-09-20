@@ -35,26 +35,26 @@ The project structure presented in this boilerplate is **fractal**, where functi
 
 ```
 .
-|-- /configs                             #Webpack configs folder
-|   |-- base.config.js                   #Base webpack config with default properties
-|   |-- dev.config.js                    #Developement webpack config   
-|   |-- prod.config.js                   #Production webpack config
-|-- /src                                 #Application source code
-    |-- /assets                          #In this folder is stored images/fonts and css themes
-    |   |-- /themes                      #Css themes folder
-    |       |--/default                  #Default theme folder
-    |          |-- _color_scheme.scss    #Scss file with default scss color variables 
-    |          |-- _fonts.scss           #Scss file with fonts/icons and font variables 
-    |          |-- main.scss             #Main scss file of the default theme
-    |-- /js                              #Js folder
-    |   |--/actions                      #In this folder will be stored reducer action
-    |   |--/components                   #Global Reusable Components
-    |   |--/containers                   #Global Reusable Containers/Layouts Components
-    |   |--/pages                        #Pages routing
-    |   |--/reducers                     #Application reducers folder
-    |   |--/test                         #Tests folder
-    |   |--main.js                       #Application bootstrap and rendering
-    |--index.html                        #Main HTML page container for app
+|-- /configs                             # Webpack configs folder
+|   |-- base.config.js                   # Base webpack config with default properties
+|   |-- dev.config.js                    # Developement webpack config   
+|   |-- prod.config.js                   # Production webpack config
+|-- /src                                 # Application source code
+    |-- /assets                          # In this folder is stored images/fonts and css themes
+    |   |-- /themes                      # Css themes folder
+    |       |--/default                  # Default theme folder
+    |          |-- _color_scheme.scss    # Scss file with default scss color variables 
+    |          |-- _fonts.scss           # Scss file with fonts/icons and font variables 
+    |          |-- main.scss             # Main scss file of the default theme
+    |-- /js                              # Js folder
+    |   |--/actions                      # In this folder will be stored reducer action
+    |   |--/components                   # Global Reusable Components
+    |   |--/containers                   # Global Reusable Containers/Layouts Components
+    |   |--/pages                        # Pages routing
+    |   |--/reducers                     # Application reducers folder
+    |   |--/test                         # Tests folder
+    |   |--main.js                       # Application bootstrap and rendering
+    |--index.html                        # Main HTML page container for app
 ```
 
 ## Styles
