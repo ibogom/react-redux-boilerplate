@@ -1,8 +1,8 @@
 You are welcome to use this project if it is a better fit for your needs, but if you are brand new to the ecosystem I highly recommend checking out something that has received more recent updates.
 
 # REACT REDUX BOILERPLATE
-[![Build Status](https://github.com/ibogom/react-redux-boilerplate/react-redux-boilerplate.svg?branch=master)](https://github.com/ibogom/react-redux-boilerplate?branch=master)
-[![dependencies](https://github.com/ibogom/react-redux-boilerplate/react-redux-up-to-date.svg)](https://github.com/ibogom/react-redux-boilerplate)
+[![Build Status](https://raw.githubusercontent.com/ibogom/react-redux-boilerplate/master/react-redux-boilerplate.svg)](https://github.com/ibogom/react-redux-boilerplate?branch=master)
+[![dependencies](https://raw.githubusercontent.com/ibogom/react-redux-boilerplate/master/react-redux-up-to-date.svg)](https://github.com/ibogom/react-redux-boilerplate)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 This project was started as development tools that should help web developers create new web sites/application. 
