@@ -60,5 +60,119 @@ The project structure presented in this boilerplate is **fractal**, where functi
 ```
 
 ## Styles
+I am using `BEM` architecture here and also make default CSS naming map at the webpack config.
 
+```javascript
+{
+    test: /\.scss$/,
+    exclude: /node_modules/,
+    use: extractSass.extract({
+        fallback: 'style-loader',
+
+        use: [
+            {
+                loader: 'css-loader',
+                query: {
+                    modules: true,
+                    sourceMap: true,
+                    importLoaders: 2,
+                    /** CHANGE CSS NAME MAP ON THE OTHER WAY YOU LIKE **/
+                    localIdentName: '[name]__[local]___[hash:base64:5]'
+                }
+            },
+            'sass-loader'
+        ]
+    })
+}
+           
+```
+
+This sass configuration provide ability to get css styles with JS import. Example: 
+
+```javascript
+
+/* components/header/header.js */
+
+import React from 'react';
+import PropTypes from 'prop-types';
+
+ /** IMPORT CSS CLASSES WITH HELP OF JS IMPORT **/
+import {header, left, right, middle} from './header.scss';
+ 
+export default class Header extends React.Component {
+ 
+     constructor(props){
+         super(props);
+     }
+ 
+     render(){
+         return(<div className={header}>
+             <div className={left}>
+ 
+             </div>
+             <div className={middle}>
+ 
+             </div>
+             <div className={right}>
+ 
+             </div>
+         </div>)
+     }
+ };
+
+````  
+```scss
+/* components/header/header.js */
+$header-height: 50px;
+
+.header{
+  width: 100%;
+  position: relative;
+  display: table;
+  height: $header-height;
+  background-color: $scnd-clr;
+  .right{
+    width: 20%;
+    display: table-cell;
+  }
+  .middle{
+    width: 60%;
+    display: table-cell;
+  }
+  .left{
+    width: 20%;
+    display: table-cell;
+  }
+}
+```
+As you can see you can easily import scss class names into your project and set styles directly to the html tags. 
 ## Tests
+I am using `jest` for testing.  So everything you need is just open you console/terminal and type following command:
+
+```bash
+$ npm test
+```
+
+### Test structure
+
+```
+.
+|
+|--/src
+   |--/js
+      |--/test                      # Main tests source folder
+         |-- __mocks__              # Application mocks should be stored here
+         |--/components             # Components test folder 
+            |-- footer.test.js      # Footer component test
+            |-- header.test.js      # Header tomponent test
+         |--/containers             # Containers test folder
+            |-- app.test.js         # App container test
+```
+
+## Thank you 
+
+I am more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :)
+
+Thanks for checking this out.
+
+- Ievgen Bogomolov 
