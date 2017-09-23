@@ -1,56 +1,4 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('../../fonts/roboto/Roboto-Thin.ttf') format('truetype'),
-  url('../../fonts/roboto/Roboto-Light.ttf') format('truetype'),
-  url('../../fonts/roboto/Roboto-Regular.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto-Bold';
-  src: url('../../fonts/roboto/Roboto-Bold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'icons';
-  src: url('../../fonts/boilerplate/fonts/boilerplate.ttf') format('truetype'),
-  url('../../fonts/boilerplate/fonts/boilerplate.woff'),
-  url('../../fonts/boilerplate/fonts/boilerplate.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-$sans-font-family: "Roboto",sans-serif;
-
-/** FONT SIZES **/
-
-$font-44px: 2.750em;
-$font-42px: 2.625em;
-$font-40px: 2.500em;
-$font-38px: 2.375em;
-$font-36px: 2.250em;
-$font-34px: 2.125em;
-$font-32px: 2.000em;
-$font-30px: 1.875em;
-$font-28px: 1.750em;
-$font-26px: 1.625em;
-$font-24px: 1.500em;
-$font-22px: 1.375em;
-$font-20px: 1.250em;
-$font-18px: 1.125em;
-$font-16px: 1.000em;
-$font-14px: 0.875em;
-$font-12px: 0.650em;
-$font-10px: 0.525em;
-$font-8px: 0.425em;
-$font-6px: 0.325em;
-
-$base-font-size: $font-14px;
-
-/** ICONS **/
+$icomoon-font-path: "fonts" !default;
 
 $i-ac_unit: "\eb3b";
 $i-access_alarms: "\e191";
@@ -202,3 +150,4 @@ $i-volume_off: "\e04f";
 $i-volume_up: "\e050";
 $i-zoom_in: "\e8ff";
 $i-zoom_out: "\e900";
+
