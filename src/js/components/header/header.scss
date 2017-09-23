@@ -31,14 +31,16 @@ $header-height: 75px;
 
   .navigation{
     width: 100%;
+    height:100%;
     padding: 0;
     margin: 0;
     list-style:none;
-    display: table-row;
+    display: table;
     background-color: $third-clr;
+    table-layout: fixed;
   }
   .inLine{
-    width: 50%;
+    width: auto;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
