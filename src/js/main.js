@@ -6,13 +6,7 @@ import {createStore} from 'redux';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 /** CONTAINERS **/
-import { App }  from './containers';
-
-/** COMPONENTS **/
-import { Header, Footer } from './components';
-
-/** PAGES NAVIGATION **/
-import Pages from './pages';
+import {App} from './containers';
 
 /** REDUCERS **/
 import AppReducers from './reducers';
@@ -24,10 +18,6 @@ const store = createStore(AppReducers);
 
 render(<Provider store={store}>
     <Router>
-        <App>
-            <Header/>
-            <Pages/>
-            <Footer/>
-        </App>
+        <App/>
     </Router>
 </Provider>, document.getElementById('app'));

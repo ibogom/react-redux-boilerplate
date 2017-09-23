@@ -5,13 +5,15 @@ import {Switch, Route} from 'react-router-dom';
 import NotFound from './404/404';
 import Root from './root/root';
 
-const Pages = () => (
-        <main>
+import { main } from './pages.scss';
+
+export default class Pages extends React.Component {
+    render() {
+        return (<main className={main}>
             <Switch>
                 <Route exact path='/' component={Root}/>
-                <Route exact path='*' component={NotFound}/>
+                <Route path='*' component={NotFound}/>
             </Switch>
-        </main>
-);
-
-export default Pages;
+        </main>)
+    }
+};

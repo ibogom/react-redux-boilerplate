@@ -1,11 +1,6 @@
 @import "color_cheme";
 @import "fonts";
 
-/* DEFAULT INDEXES */
-$high-index: 10000;
-$middle-index: 1000;
-$low-index: 100;
-
 /** HEADER **/
 
 h1, h2, h3{
@@ -13,6 +8,7 @@ h1, h2, h3{
   text-align: center;
   text-transform: uppercase;
   color: $font-pr-clr;
+  padding-top: 20px;
 }
 
 /** INPUTS **/
@@ -81,4 +77,16 @@ html, body {
   min-height:100vh;
   font-family: $sans-font-family;
   background-color: $pr-clr;
+}
+
+$default-wrapper-height: 100%;
+$footer-and-header-height: 100px;
+
+.main{
+  display: table;
+  min-height: calc(#{$default-wrapper-height} - #{$footer-and-header-height});
+  .wrapper{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
