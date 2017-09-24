@@ -12,12 +12,14 @@ import {App} from './containers';
 import AppReducers from './reducers';
 
 /** THEMES **/
-import '../assets/themes/default/main.scss';
+import '../assets/themes/main.scss';
+
+import variables from '../assets/themes/dracula/_color_scheme.json';
 
 const store = createStore(AppReducers);
 
 render(<Provider store={store}>
     <Router>
-        <App/>
+        <App theme={variables} />
     </Router>
 </Provider>, document.getElementById('app'));

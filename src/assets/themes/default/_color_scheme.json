@@ -1,0 +1,33 @@
+{
+  "pr-clr": "#1f253d",
+  "scnd-clr": "#394264",
+  "third-clr": "#50597b",
+  "fourth-clr": "#11a8ab",
+
+  "font-pr-clr": "#fff",
+  "font-scnd-clr": "#9099b7",
+  "font-thrd-clr": "#e64c65",
+  "font-fourth-clr": "#4fc4f6",
+
+  "btn-info": "#007bb6",
+  "btn-warn": "#ffbc4d",
+  "btn-def": "#1f253d",
+  "btn-scs": "#11a8ab",
+  "btn-err": "ce0707",
+  "btn-def-opacity": "rgba(255,255,255,.3)",
+
+  "h5-clr": "#11a8ab",
+  "h4-clr": "#cc324b",
+  "h3-clr": "#1a4e95",
+  "h2-clr": "#35aadc",
+  "h1-clr": "#394264",
+
+  "brdr-def": "#CFCFCF",
+  "brdr-scs": "#22ae6f",
+  "brdr-info": "#005C90",
+  "brdr-warn": "#efab53",
+  "brdr-err": "#9B0000",
+
+  "validation-error": "rgba(177, 0, 0, 0.23)",
+  "validation-scs": "rgba(34, 174, 111, 0.53)"
+}
