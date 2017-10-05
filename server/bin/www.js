@@ -33,7 +33,7 @@ if(NODE_ENV === "development") {
 app.use(webpackHotMiddleWare(compiler));
 
 
-// app.use(favicon(path.join(__dirname, '../../static', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, '../../static', 'favicon.svg')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
