@@ -13,10 +13,11 @@ export default class Header extends React.Component {
 
     renderNavigation() {
         const links = Object.keys(this.props.pages).map((name, i) => {
-            return <Link key={i} to={this.props.pages[name]}
+            return <Link key={i}
+                         to={this.props.pages[name]}
                          className={inLine + (this.props.route === name ? ' ' + active : '')}>
-                {name}
-            </Link>
+                        {name}
+                    </Link>
         });
         return (<nav className={navigation}>
             {links}
