@@ -9,7 +9,10 @@ const socket = require('socket.io');
 const webpack = require('webpack');
 const webpackConfig = require('../../webpack.config');
 const webpackDevMiddleWare = require('webpack-dev-middleware');
-const webpackHotMiddleWare = require('webpack-hot-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
+
+const routes = require('../routes/index');
+const sockets = require('../sockets/index');
 
 const compiler = webpack(webpackConfig);
 
@@ -25,12 +28,16 @@ if(NODE_ENV === "development") {
     app.use(webpackDevMiddleWare(compiler, {
         publicPath: webpackConfig.output.publicPath,
         stats: {
-            colors: true
+            colors: true,
+            chunks: false,
+            'errors-only': true
         }
     }));
 }
 
-app.use(webpackHotMiddleWare(compiler));
+app.use(webpackHotMiddleware(compiler, {
+    log: console.log
+}));
 
 
 app.use(favicon(path.join(__dirname, '../../static', 'favicon.svg')));
@@ -50,3 +57,5 @@ const server = app.listen(app.get('port'), (err) => {
 });
 
 const io = socket.listen(server);
+
+sockets(io);

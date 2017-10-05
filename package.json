@@ -4,7 +4,7 @@
   "description": "redux, react, boilerplate",
   "main": "main.js",
   "scripts": {
-    "start": "export NODE_ENV=development && node server/bin/www.js",
+    "start": "export NODE_ENV=development && node --inspect server/bin/www.js",
     "dev": "export NODE_ENV=development && webpack-dev-server --content-base src --inline --hot --port 3000",
     "prod": "export NODE_ENV=production && webpack",
     "test": "jest --coverage -u -c=./configs/jest.config.js"
@@ -40,6 +40,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-hot-loader": "^3.0.0-beta.7",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^15.6.1",
