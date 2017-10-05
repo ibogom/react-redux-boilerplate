@@ -11,10 +11,12 @@ import {App} from './containers';
 import store from './stores';
 
 /** THEMES **/
-import '../assets/themes/default/main.scss';
+import '../assets/themes/main.scss';
+
+import variables from '../assets/themes/dracula/_color_scheme.json';
 
 render(<Provider store={store}>
     <Router>
-        <App/>
+        <App theme={variables} />
     </Router>
 </Provider>, document.getElementById('app'));
