@@ -1,33 +1,36 @@
-var nodeExternals = require('webpack-node-externals');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
-    disable: process.env.NODE_ENV === "development"
+
+const baseConfig = require('./base.config.js');
+const webpack = require('webpack');
+const path = require('path');
+
+const jsUglify = new webpack.optimize.UglifyJsPlugin({
+    sourceMap: true,
+    comments: false,
+    compress: {
+        warnings: false,
+        screw_ie8: true,
+        conditionals: true,
+        unused: true,
+        comparisons: true,
+        sequences: true,
+        dead_code: false,
+        evaluate: false,
+        if_return: true,
+        join_vars: true,
+    },
 });
 
-module.exports = {
+baseConfig.plugins.push(jsUglify);
 
-    target: 'node',
+const prodConfig = Object.assign({}, baseConfig, {
 
-    /** THIS METHOD EXCLUDE MODULES FROM BUNDLE **/
-    externals: [
-        nodeExternals()
-    ],
+    output: {
+        path: path.join(__dirname, "../static"),
+        filename: "[name].min.js",
+        publicPath: '/'
+    },
 
-    plugins: [
+    plugins: baseConfig.plugins
+});
 
-        extractSass,
-
-        new webpack.DefinePlugin({
-            NODE_ENV: JSON.stringify(process.env.NODE_ENV)
-        }),
-
-        new webpack.optimize.UglifyJsPlugin({
-            mangle: false,
-            sourcemap: false
-        }),
-
-        new webpack.NoEmitOnErrorsPlugin()
-    ]
-};
+module.exports = prodConfig;

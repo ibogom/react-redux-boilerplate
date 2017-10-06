@@ -53,6 +53,7 @@ The project structure presented in this boilerplate is **fractal**, where functi
 |   |   |--/containers                   # Global Reusable Containers/Layouts Components
 |   |   |--/pages                        # Pages routing
 |   |   |--/reducers                     # Application reducers folder
+|   |   |--/stores                       # Application stores folder
 |   |   |--/test                         # Tests folder
 |   |   |--main.js                       # Application bootstrap and rendering
 |   |--index.html                        # Main HTML page container for app
